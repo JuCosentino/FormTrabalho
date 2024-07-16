@@ -4,104 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Formulário do seu pet</title>
-
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/9beea7f700.js" crossorigin="anonymous"></script>
+    <title>Cadastro de usuário</title>
 
 </head>
 
 <body>
+    <img src="teste 2" alt="heart">
     <div>
-        <h1>Cadastro de usuário</h1>
-        <p>complete seus dados e venha fazer parte da nossa familía!</p>
-        <br>
+        <h1 id="titulo">Cadastro</h1><br>
     </div>
 
-    <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
+    <form id="form">
+
+        <div class="input">
+            <i class="fa-solid fa-circle-user" style="color: #422163;"></i>
+            <label>Nome:</label>
+            <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome completo">
+        </div>
+       
+        <div class="input">
+            <i class="fa-solid fa-cake-candles" style="color: #422163;"></i>
+            <form>
+                Aniversário: <input type="date" name="nascimento">
+
+        </div>
+        <form id="form">
+            <div class="input">
+                <i class="fa-solid fa-envelope" style="color: #422163;"></i>
+                <label>Email:</label>
+
+                <input type="email" name="Email" id="Email" placeholder="Digite seu email">
             </div>
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="Sobrenome" id="Sobrenome" placeholder="Digite seu sobrenome">
+            <div class="input">
+                <i class="fa-solid fa-lock" style="color: #422163;"></i>
+                <label>Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua Senha">
             </div>
-            <div>
+
+            <div class="input">
+                <i class="fa-solid fa-lock" style="color: #422163;"></i>
                 <form>
-                    Data de nascimento: <input type="date" name="nascimento">
-                </form>
+                    <label>Confirme sua senha:</label>
+                    <input type="password" name="senha" placeholder="Confirme sua senha">
             </div>
-            <div>
-                <label>Sexo:</label>
-    
-                <label> Feminino
-                    <input type="radio" name="Sexo" value="feminino">
-                </label>
-                <label> Masculino
-                    <input type="radio" name="Sexo" value="Masculino">
-                </label>
-                <label> Prefiro não responder
-                    <input type="radio" name="Sexo" value="Prefiro não responder">
-                </label>
-            </div>
-        </fieldset>
-        <div>
-            <label>Email</label>
 
-            <input type="email" name="Email" id="Email" placeholder="Digite seu email">
-        </div>
-        <form>
-            <label>Senha</label>
-            <input type="password" name="senha" placeholder="Digite sua Senha">
         </form>
-        
-        <div>
-            <label>Estado</label>
-            <select id="estado" name="estado">
-                <option value="Selecione seu estado" selected disabled>Selecione seu estado</option>
-                <option value="Acre (AC)">Acre (AC)</option>
-                <option value="Alagoas (AL)">Alagoas (AL)</option>
-                <option value="Amapá (AP)">Amapá (AP)</option>
-                <option value="Amazonas (AM)">Amazonas (AM)</option>
-                <option value="Bahia (BA)">Bahia (BA)</option>
-                <option value="Ceará (CE)">Ceará (CE)</option>
-                <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
-                <option value="Espírito Santo (ES)">Espírito Santo (ES)</option>
-                <option value="Goiás (GO)">Goiás (GO)</option>
-                <option value="Maranhão (MA)">Maranhão (MA)</option>
-                <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
-                <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
-                <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
-                <option value="Pará (PA)">Pará (PA)</option>
-                <option value="Paraíba (PB)">Paraíba (PB)</option>
-                <option value="Paraná (PR)">Paraná (PR)</option>
-                <option value="Pernambuco (PE)">Pernambuco (PE)</option>
-                <option value="Piauí (PI)">Piauí (PI)</option>
-                <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
-                <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
-                <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
-                <option value="Rondônia (RO)">Rondônia (RO)</option>
-                <option value="Roraima (RR)">Roraima (RR)</option>
-                <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
-                <option value="São Paulo (SP)">São Paulo (SP)</option>
-                <option value="Sergipe (SE)">Sergipe (SE)</option>
-                <option value="Tocantins (TO)">Tocantins (TO)</option>
-            </select>
-        </div>
 
+        <form id="button">
+            <input type="button" value="ENVIAR" onclick="msg()"
+                style="width: 90px;height: 30px;background-color: #8000806e; border-radius: 10px; border-color:#663399;  font-family: Georgia, 'Times New Roman', Times, serif;cursor: pointer;">
+        </form>
 
+        <script>
+            function msg() {
+                alert("Você se cadastrou com sucesso!");
+            }
+        </script>
 
-        <form>
-            <input type="button" value="ENVIAR" onclick="msg()">
-          </form>
-          
-          <script>
-          function msg() {
-            alert("Você se cadastrou com sucesso!");
-          }
-          </script>
-    </form>
 
 
 </body>
