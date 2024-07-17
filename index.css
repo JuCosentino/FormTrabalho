@@ -7,26 +7,28 @@ body{
 width: 100px;
 height: 100px;
 font-family:georgia;
-background: linear-gradient(-93deg, #87e0ee, #8435f4,#d583f3, #f74aee, #951279 );
+background: linear-gradient(-93deg, #f7feff,  #c5f3f9, #a0e8f4, #bda0f4, #a66ef4ec,#d36cb4bd, #f180ebb3, #cb2ba89e , #e65936a1 );
 position: relative ;
     top: 50%;
     left: 45%;
 }
 
 #titulo{
+    
+    padding-top: 0cm;
     font-size: 48px;
   position: relative ;
   top: 30px;
   left: px;
-  right: 50px;
-color:#663399;
+  right: 70px;
+color:#422163;
 }
 #form{
     position: relative;
     top: 250%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #DDA0DD;
+    background: #c96ab7;
     border-radius: 10px;
     border-color: #663399;
     padding: 60px;
@@ -34,12 +36,13 @@ color:#663399;
     align-items: center;
     color: rgb(80, 25, 116);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    input::placeholder{color: #2b0f48;}
     
 }
 #button{
     position: relative ;
     top: 60%;
-    left: 25%;
+    left: 15%;
     
 }
 
@@ -50,15 +53,26 @@ color:#663399;
     padding: 5px;
     margin: 0 0 12px -5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
+
 .input input {
     width: 80%;
     border: none;
     outline: none;
-    background-color: #DDA0DD;
+    background-color: #c96ab7;
     font-family: Georgia, 'Times New Roman', Times, serif;
     transform:translateY(-10%);
     color:rgba(0, 0, 0, 0.545);
     font-size: 11pt;
     
+}
+.imagem{
+    display:flex;
+    position: relative;
+    margin-top: 0%;
+    top: -10cm;
+    left: 9cm;
+    right: 5cm;
+  
 }
